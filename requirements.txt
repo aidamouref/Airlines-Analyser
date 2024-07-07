@@ -5,3 +5,4 @@ Pillow
 scikit-learn
 joblib
 wordcloud
+nltk
