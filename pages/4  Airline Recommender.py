@@ -43,7 +43,7 @@ def best_airline_recommender(user_input):
     df_rec.index = range(1, 6)
     df_rec = df_rec[['AIRLINE','OVERALLSCORE']]
     df_rec['OVERALLSCORE']=df_rec['OVERALLSCORE'].round(1)
-    st.subheader("Get recommendations for similar airles")
+    st.subheader("Get recommendations for similar airlines")
     return df_rec
 
 
