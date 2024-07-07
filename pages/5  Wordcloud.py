@@ -4,6 +4,7 @@ import numpy as np
 from PIL import Image
 from wordcloud import WordCloud
 import nltk
+from nltk.corpus import stopwords
 
 
 df=pd.read_csv("datasets/streamlitdb/df_forwordcloud.csv")
@@ -40,6 +41,7 @@ texto = " ".join(planes)
 mask = "images/plane.png"
 mask = np.array(Image.open("images/plane.png"))
 
+nltk.download('stopwords')
 stopwrd = nltk.corpus.stopwords.words('english')
 new_stopwords = ['and','I','A','And','So','arnt','This','When','It','many','Many','so','cant', 'again','Yes','yes','No','no','These','these','customer service','service', 'customer', 'review', 'customer review', 'airline', 'airlines', 'flight', 'seat', 'seats',  'seat','customer review', '$', '#', '£','check-in', 'check in', 'fly','customer service','service', 'customer', 'review', 'airline', 'flight', 'seat', 'experience', 'BA', 'Delta', 'United', 'China', 'American', 'Frontier', 'British', 'Qatar', 'Spirit', 'Air Lines', 'Airlines', 'Airways','customer service','service', 'customer', 'review', 'airline', 'flight']
 airline_stopwords = set(df['AIRLINENAME'].values)
