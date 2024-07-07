@@ -1,0 +1,10 @@
+pandas
+streamlit
+numpy
+numpy
+PIL
+sklearn
+joblib
+os
+codecs
+wordcloud
