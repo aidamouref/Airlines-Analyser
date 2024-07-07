@@ -1,12 +1,7 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import nltk
-
-import os
 import joblib
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
+
 
 # Load the sentiment data
 sentimentdf = pd.read_csv("datasets/streamlitdb/df_forwordcloud.csv")

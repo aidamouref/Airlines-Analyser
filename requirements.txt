@@ -1,10 +1,7 @@
 pandas
 streamlit
 numpy
-numpy
 Pillow
-sklearn
+scikit-learn
 joblib
-os
-codecs
 wordcloud

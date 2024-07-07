@@ -1,8 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import streamlit.components.v1 as components
-import codecs
 from sklearn.neighbors import NearestNeighbors
 
 df=pd.read_csv("datasets/streamlitdb/cleandf.csv")
