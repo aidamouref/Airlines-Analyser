@@ -2,7 +2,7 @@ pandas
 streamlit
 numpy
 numpy
-PIL
+Pillow
 sklearn
 joblib
 os
