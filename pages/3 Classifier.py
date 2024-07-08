@@ -56,3 +56,4 @@ elif predicted_score==5:
     st.image("images/mediumflight.gif")
 else:
     st.image("images/recommend.gif")
+    

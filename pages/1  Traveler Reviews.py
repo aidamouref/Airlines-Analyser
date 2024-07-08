@@ -23,6 +23,7 @@ st.set_page_config(
 st.header("Flight Reviews")
 st.markdown("_Let us show you the good ...and the not so good_")
 
+st.markdown("###")
 airlines = sentimentdf["AIRLINENAME"].unique()
 with st.sidebar:
     selection = st.radio(':airplane: Please select an Airline:', airlines)
@@ -51,6 +52,7 @@ def display_reviews(airline):
         
         countpos = pos_sentiment_df[pos_sentiment_df['AIRLINENAME'] == airline].shape[0]
         countneg = neg_sentiment_df[neg_sentiment_df['AIRLINENAME'] == airline].shape[0]
+        percpost = countpos/(countpos+countneg)
         
             # Get random positive review
         random_sentences_pos = get_random_review(pos_sentiment_df, airline, "positive")
@@ -62,12 +64,15 @@ def display_reviews(airline):
         random_sentences_neg = get_random_review(neg_sentiment_df, airline, "negative")
         st.subheader(":face_with_spiral_eyes:")
         st.write(random_sentences_neg)
-
+        
+            
     with col2:
         st. markdown(f"#### {airline} Summary")
         st.write(f"**Number of positive reviews:**  _{countpos}_")
         st.write(f"**Number of negative reviews:**  _{countneg}_")
-        st.write ("**Veredict:**")
+        st.write(f"**% positive reviews:**  _{percpost*100:.2f}%_")
+        st.markdown("###")
+        st.write(f"**VEREDICT:**")
         if countpos>countneg:
             st.image("images/goodflight.gif")
         elif countpos==countneg:
