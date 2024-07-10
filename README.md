@@ -1,7 +1,7 @@
 # Airlines Analyser
 
 
-![logos](Images/logos.png)
+![logos](images/logos.png)
 
 
 
@@ -129,38 +129,38 @@ After this,  a clean database of 90,000 rows and 27 columns was obtained. Here m
 
 Data was assessed more specifically using graphs. Most travelers valued negatively each of the different ratings included in the review. Regarding entertainment, Spirit and Frontier are the less valued:
 
-![entertainment](Images/entertainment.png)
+![entertainment](images/entertainment.png)
 
 In terms of staff, most Airlines have a poor staff service. Ground service is worse than Cabin Service in all Airlines and British Airways is the best valued while American, United & Spirit are the worst valued in this rating.
 
-![cabinservice](Images/cabinservice.png)
+![cabinservice](images/cabinservice.png)
 
-![groundservice](Images/groundserv.png)
+![groundservice](images/groundserv.png)
 
 Regarding seating, no Airline is considered to have comfortable seats. American Airlines and British Airways stand as the most valued. Frontier is the most penalized. 
-![seatcomfort](Images/seatcomfort.png)
+![seatcomfort](images/seatcomfort.png)
 
 The type of travel and the purpose of travel were also assessed. Most people travelled alone and in business class this was always the case. Travelling with couple/family was always for leisure.
 
-![trippurpose](Images/trippurpose.png)
+![trippurpose](images/trippurpose.png)
 
 The relationship between the overallscore and the ratings was also assessed differentiating by the trip distance. Food and staff service were better and more common in long distance flights.
 
-![scatter_ratings](Images/scatter_ratings.png)
+![scatter_ratings](images/scatter_ratings.png)
 
 In terms of trip verification, many trips were not verified. Specially in British Airways and Spirit Airlines, which reviews should be carefully considered.
 
-![verified](Images/verified.png)
+![verified](images/verified.png)
 
 
 Also, the overall score of the flight over time was analysed by airline. There is a tendency to decrease the passenger satisfaction with time:
 
-![timeline](Images/timeline.png)
+![timeline](images/timeline.png)
 
 
 Not only real data was considered, but also a prediction of how would the overall score of a flight behave in future reviews was performed. Data was narrowed only to take the last year of available data (2023) in order to get readable results. The analysis was performed using LSTM (Long short-term memory) neural network. Here is an example of the prediction of the overall score for American Airlines, were a decreasing tendency can be perceived:
 
-![prediction_aa](Images/prediction_aa.png)
+![prediction_aa](images/prediction_aa.png)
 
 ## *What does influence a flight to be (positively) recommended?*
 
@@ -187,10 +187,10 @@ weighted avg       0.88      0.87      0.87     72007
 
 ```
 
-![confmatlogit_bal](Images/confmatlogit_bal.png)
+![confmatlogit_bal](images/confmatlogit_bal.png)
 
 
-![roclogit_balanced](Images/roclogit_balanced.png)
+![roclogit_balanced](images/roclogit_balanced.png)
 
 Coefficients of the model show that while the cabin staff rating and the luxury of the seat influence positively a recommendation, the fact that there is a scale, a long distance flight, travelling with the family or the fact that the trip was verified cause the opposite effect:
 
@@ -267,14 +267,14 @@ weighted avg       0.88      0.88      0.88     23668
 ```
 
 
-![knn_balanced](Images/knn_balanced.png)
+![knn_balanced](images/knn_balanced.png)
 
 Number of neighbors employed was 36 after performing a hyperparameter tuning:
-![varying_neighborsknn](Images/varying_neighborsknn.png)
+![varying_neighborsknn](images/varying_neighborsknn.png)
 
 A random forest classifier was also performed to extract with feature importance which variables were considered more relevant to explain a positive recommendation. Given this type of models is not affected by the correlation between variables either, more ratings were included to check their effect on a (positive) recommendation:
 
-![feature importance](Images/feature_importance.png)
+![feature importance](images/feature_importance.png)
 
 Ratings, specially ground service ratings, are the variables that best explain a recommendation.
 
@@ -379,7 +379,7 @@ This process was reinforced with a double check based on the overall score. To a
 
 This sentiment analysis was finally turned into WordClouds to have a more visual impression of customer thoughts for each of the airlines. Again, this can be checked in the app, but as a mode of example of a wordcloud for all airlines:
 
-![plane_wc](Images/plane_wc.png)
+![plane_wc](images/plane_wc.png)
 
 
 ## *Conclusion*
