@@ -341,18 +341,17 @@ a flight classifier was performed using a random forest regressor model. The use
 
 ```Python
 
-my_flight_values = [3,3,8,8,6,4,2]
+my_flight_values = [3,3,5,5,1,4,2]
 
 
-The Overall Score of this airline is 8 for you!!!
+The Overall Score of this airline is 5 for you!!!
+              AIRLINENAME  OVERALLSCORE
+137             Canaryfly           5.0
+162  Danish Air Transport           5.0
+163        Darwin Airline           5.0
+174               Easyfly           5.0
+253       Jordan Aviation           5.0
 
-                  AIRLINENAME  OVERALLSCORE
-30                  Air Costa           8.0
-105             Badr Airlines           8.0
-189             Felix Airways           8.0
-239                      Jazz           8.0
-297  Mann Yadanarpon Airlines           8.0
-```
 
 **Airline Recommender**
 
@@ -362,12 +361,12 @@ A recommendation system was also created. Here, the user selects an airline and 
 
 Then you should try out these airlines:
  
-AIRLINE	             OVERALLSCORE
-1	Mahan Air	        8.33
-2	Germania Airline	5.33
-3	Bamboo Airways	    4.88
-4	Juneyao Airlines	4.23
-5	Ryanair         	3.72
+	AIRLINE	OVERALLSCORE
+1	Lao Airlines	    7.00
+2	Emirates	        5.10
+3	Scoot	            3.86
+4	Shenzhen Airlines	3.57
+5	WOW air	            2.77
 ```
 Note this tool can be used not only with the 6  airlines chosen for the main analysis, but with any of the 547 airlines provided in the main dataset.
 
