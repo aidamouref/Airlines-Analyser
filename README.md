@@ -156,7 +156,7 @@ To answer this question, classification models were employed. First, a Logistic 
 A crosstab for each variable was performed to check the correlation between them. This showed a strong multicollinearity between data. As a result, most ratings were dropped except cabin service to be assumed specially relevant in a positive recommendation. Variable year was also dropped to its strong correlation showed by the correlation matrix and the VIF.
 
 
-![alt text](image.png)
+![corr_matrix](images/corr_matrix.png)
 
 The dependant variable was quite imbalanced so upsampling techniques (SMOTE) were also used to balance it.
 
