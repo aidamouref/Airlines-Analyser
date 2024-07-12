@@ -70,19 +70,6 @@ After this,  a clean database of 90,000 rows and 27 columns was obtained. Here m
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -195,19 +182,6 @@ weighted avg       0.88      0.87      0.87     72007
 Coefficients of the model show that while the cabin staff rating and the luxury of the seat influence positively a recommendation, the fact that there is a scale, a long distance flight, travelling with the family or the fact that the trip was verified cause the opposite effect:
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -351,7 +325,7 @@ The Overall Score of this airline is 5 for you!!!
 163        Darwin Airline           5.0
 174               Easyfly           5.0
 253       Jordan Aviation           5.0
-
+```
 
 **Airline Recommender**
 
