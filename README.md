@@ -331,17 +331,47 @@ The Overall Score of this airline is 5 for you!!!
 
 A recommendation system was also created. Here, the user selects an airline and the system provides other similar airlines together with their overall score in a descending order. Again, this facility is provided in The Flight Judge app, but as a mode of example, if the user enters 'Norwegian' as the selected airline, the system provides:
 
-```Python
+Then you should try out these airlines: 
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AIRLINE</th>
+      <th>OVERALLSCORE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Lao Airlines</td>
+      <td>7.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Emirates</td>
+      <td>5.10</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Scoot</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Shenzhen Airlines</td>
+      <td>3.57</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>WOW air</td>
+      <td>2.77</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-Then you should try out these airlines:
- 
-	AIRLINE	OVERALLSCORE
-1	Lao Airlines	    7.00
-2	Emirates	        5.10
-3	Scoot	            3.86
-4	Shenzhen Airlines	3.57
-5	WOW air	            2.77
-```
+
 Note this tool can be used not only with the 6  airlines chosen for the main analysis, but with any of the 547 airlines provided in the main dataset.
 
 **Sentiment Analysis**
