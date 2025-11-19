@@ -56,13 +56,13 @@ def display_reviews(airline):
         
             # Get random positive review
         random_sentences_pos = get_random_review(pos_sentiment_df, airline, "positive")
-        st.subheader(":smiling_face_with_3_hearts:")
+        st.subheader("😍")
         st.write(random_sentences_pos)
         
         # Get random negative review
         
         random_sentences_neg = get_random_review(neg_sentiment_df, airline, "negative")
-        st.subheader(":face_with_spiral_eyes:")
+        st.subheader("😵‍💫")
         st.write(random_sentences_neg)
         
             
