@@ -46,7 +46,7 @@ def main():
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
     '''
-    components.html(html_temp, width=2000, height=1500)
+    components.html(html_temp, width=3000, height=1500)
 
 if __name__ == '__main__':
     main()
