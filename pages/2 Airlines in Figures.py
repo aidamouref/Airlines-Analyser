@@ -8,7 +8,7 @@ st.title('Airlines in Figures')
 
 def main():
     html_temp = '''
-<div class='tableauPlaceholder' id='viz1763578607301' style='position: relative'>
+<div class='tableauPlaceholder' id='viz1763578607301' style='width:device-width; height:600px; position: relative'>
     <noscript>
         <a href='#'>
             <img alt='Airlines in Figures'
