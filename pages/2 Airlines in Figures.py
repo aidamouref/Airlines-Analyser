@@ -38,6 +38,7 @@ def main():
     var vizElement = divElement.getElementsByTagName('object')[0];
     vizElement.style.width='100%';
     vizElement.style.maxWidth = '1400px';
+    vizElement.style.height = '927px';
 
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
